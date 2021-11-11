@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jeremy Project</title>
+</head>
+<style>
+   .logo
+    {
+        height: 100%;
+        width: auto;
+    }
+    body
+    {
+        display: grid;
+        margin: 0px;
+        grid-template-columns: repeat(4,25%);
+        grid-template-areas: 
+        'header header header header'
+        'main main main main'
+        'footer footer footer footer'
+        ;
+    }
+    h1,h2,h3
+    {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    p, a, li{
+        font-size: 20px;
+        font-family:serif;
+        text-decoration: none;
+    }
+    .row
+    {
+        display: grid;
+        grid-template-rows: auto;
+    }
+    .row1,.row2
+    {
+        grid-template-columns: repeat(2,50%);
+        align-items: center;
+      
+    }
+    .row1 >div,
+    .row2 >div
+    {
+        padding: 15px 15px;
+    }
+   
+   
+    .img
+    {
+        grid-area: img;
+        height: auto;
+        width: 100%;
+    }
+    .row1 >div> h3,
+    .row1 >div> h3
+    {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    header
+    {
+        grid-area: header;
+        display: flex;
+        align-items: center;
+        height: 110px;
+        width: auto;
+
+    }
+    header > div
+    {
+        flex-grow: 1;
+        height: 90px;
+        width: auto;
+        
+    }
+    header > nav >ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    header > nav >ul>li
+    {
+        padding: 0px 10px;
+    }
+    header > nav >ul>li>a
+    {
+        color: #000;
+    }
+    main
+    {
+        grid-area: main;
+    }
+    .masthead
+    {
+        width: 100%;
+        height: 100vh;
+        background: url('Clio_2020-Blog_Image-Programming_for_Lawyers.png')  center/cover;
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .masthead >h1
+    {
+        color: white;
+        font-size: 56px;
+    }
+
+    .row3
+    {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        text-align: center;
+
+    }
+    .fab
+    {
+        font-size: 150px;
+        color: blue;
+    }
+    footer
+    
+    {
+        grid-area: footer;
+        display: flex;
+        align-items: center;
+       
+    }
+    footer > div
+    {
+        padding: 15px;
+    }
+   footer > div > a > .logo
+   {
+       width: 100%;
+   }
+   @media screen and (max-width:1000px)
+   {
+       .row
+       {
+        grid-template-columns: repeat(1,100%);
+       }
+       .row2 > div:nth-child(1)
+       {
+           order: 2;
+       }
+   }
+   @media screen and (max-width:768px) {
+        
+    .row3
+    {
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer > div:nth-child(1)
+    {
+        height: 170px;
+    }
+   
+
+   }
+   @media screen and (max-width:460px)
+   {
+    header > nav >ul>li>a
+    {
+        font-size: 3vw;
+        color: #000;
+    }
+    .masthead
+    {
+        height: 500px;
+    }
+   }
+
+</style>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img class="logo"src="Pizza-logos.png" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section class="masthead">
+            <h1>Main Title</h1>
+        </section>
+        <section class="row row1">
+            <div>
+                <h3>Section Heading</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil, placeat repellendus sint vitae veritatis hic facere odio quasi officia quos perferendis ea sequi voluptas ex deleniti adipisci, id magnam. Perferendis illo maxime temporibus.
+                </p>
+            </div>
+            <div>
+                <img class="img" src="Clio_2020-Blog_Image-Programming_for_Lawyers.png" alt="">
+            </div>
+        </section>
+        <section class="row row2">
+            
+            <div>
+                <img class="img" src="Clio_2020-Blog_Image-Programming_for_Lawyers.png" alt="">
+            </div>
+            <div>
+
+                <h3>Section Heading</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil, placeat repellendus sint vitae veritatis hic facere odio quasi officia quos perferendis ea sequi voluptas ex deleniti adipisci, id magnam. Perferendis illo maxime temporibus.
+                </p>
+            </div>
+     
+        </section>
+        <section class=" row3">
+            <div>
+                <p><i class="fab fa-html5"></i></p>
+                <h3>HTMl</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <p><i class="fab fa-css3-alt"></i></p>
+                <h3>CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <p><i class="fab fa-js-square"></i></p>
+                <h3>JS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div><a href="index.html"><img class = "logo"src="Pizza-logos.png" alt=""></a></div>
+        <div>
+            <h4>Footer Title</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quibusdam sapiente eveniet quos fugit minus doloremque atque, odio, deleniti dolor aut quae. Quidem nesciunt eius asperiores quas minus, eveniet accusantium aut praesentium perferendis, inventore illum!</p>
+        </div>
+    </footer>
+</body>
+</html>

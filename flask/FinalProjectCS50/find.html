@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    
+    <title>Find Tutor</title>
+    <style>
+        input{
+            padding: 1%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 27%;
+    margin: 2% 3%;
+    box-sizing: border-box;
+    font-family: cursive;
+    color: #2C3E50;
+    font-size: 94%;
+        }
+
+        .fs-title {
+            font-size: 175%;
+            text-transform: uppercase;
+            color: blanchedalmond;
+      
+            width: 71%;
+            margin: 2% auto;
+            text-align: center;
+        }
+
+        .fs-subtitle {
+            font-weight: normal;
+            font-size: 13px;
+            color: rgb(216, 125, 125);
+            font-size: 93%;
+            text-transform: uppercase;
+            color: blanchedalmond;
+            width: 54%;
+            margin: 2% auto;
+            text-align: center;
+        }
+
+        .head {
+            background-color: #edd6b6;
+
+            width: 100%;
+            margin-top: -8px;
+            display: block;
+            z-index: 2;
+        }
+
+        .body {
+            margin: 0;
+        }
+
+
+        .image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)), url("pics/pic.jpg");
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 190px;
+            top: 9px;
+
+        }
+
+        .right {
+
+            display: inline-block;
+            width: 17%;
+            position: absolute;
+            right: 35px;
+            top: 35px;
+                                                                                                 
+        }
+
+        .regis {
+            display: block;
+            margin: auto;
+            width: 77%;
+        }
+
+        .regis li {
+            border: 2px solid #ffffff;
+            background-color: #e6e9f3;
+            border-radius: 4px;
+            font-size: 20px;
+            text-align: center;
+            margin: -10px 4px;
+            padding: 9px 7px;
+            display: inline-block;
+            box-shadow: 3px 5px #bcb4b3;
+        }
+
+        .regis li a {
+            text-decoration: none;
+            color: #785053;
+
+        }
+
+        .regis li:hover {
+            background-color: rgb(241, 237, 229);
+        }
+
+        .regis li:active {
+            background-color: rgb(240, 221, 186);
+            box-shadow: 0px 2px rgb(24, 23, 23);
+            transform: translateY(4px);
+        }
+
+        .logo {
+            width: 100px;
+            height: 80px;
+
+        }
+
+        .contain {
+            margin-top: 103px;
+        }
+        .submit input {
+            margin: 2% auto;
+            color: blanchedalmond;
+            background-color: black;
+            padding: 1% 2%;
+            display: block;
+            width: 14%;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Lobster', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image">
+
+
+        <header class="head">
+            <div class="left">
+                <div class="logo">
+
+                    <img class="logo"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxxrA0dVjBGkwr7WnKgO8VhghP3Mh2EThXfA&usqp=CAU"
+                        alt="education">
+                </div>
+
+            </div>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li id="list1"><a href="">Home</a></li>
+                        <li id="list2"><a href="">Find</a> </li>
+                        <li id="list3"><a href="">Resources</a> </li>
+                        <li id="list4"><a href="">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right">
+                <ul class="regis">
+                    <li id="li1"><a href="">Register</a> </li>
+                    <li id="li2"><a href="">Sign In</a> </li>
+                </ul>
+            </div>
+
+        </header>
+        <main>
+            <form action="#">
+
+         
+            <div class="contain">
+                <h2 class="fs-title" style="font-size:2vw">Find a Teacher</h2>
+                <h3 class="fs-subtitle" style="font-size:1vw">You can leave any box/boxes empty</h3>
+
+                <input type="text" name="tname" placeholder=" first name of teacher" />
+                <input type="text" name="lname" placeholder="last name of teacher" />
+                <input type="text" name="tsubject" placeholder="subject" />
+                <input type="text" name="tplace" placeholder="Adress/place" />
+
+            </div>
+            <div class="submit" >
+                <input style="font-size: 1vw;" type="submit" value="Submit">
+            </div>
+        </form>
+        </main>
+    </div>
+</body>
+
+</html>

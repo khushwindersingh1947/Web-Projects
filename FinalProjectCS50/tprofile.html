@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/gender.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Teachers Profile</title>
+    <style>
+      
+      
+
+        .image {
+
+            background-image: url("pics/tform.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+   
+      
+
+        .aca {
+    width: 58vw;
+    margin: 3vw auto;
+        }
+
+   
+      
+    
+       
+    </style>
+</head>
+
+<body>
+    <div class="image">
+        <header>
+
+            <div class="head" style="    background-color: #d9d6cd;">
+                
+                    <div class="logo">
+                        <img class="logo" src="pics/logo.jpg" alt="education">
+                    </div>
+
+                
+                <h2 class="heading" style="font-size:4vw">
+                    Teacher's Profile!
+                </h2>
+
+            </div>
+            <main class="main">
+                <p class="form-heading" style="font-size:2vw">
+                    You Can change your profile Here
+                </p>
+                <form id="msform">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Data Name</td>
+                                <td>Value</td>
+                                <td>Change</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for key in data[0]%}
+                            <tr>
+                                <td>{{key}}</td>
+                                <td>{{data[0][key]}}</td>
+                                <td>
+                                    <input type="text" name={{key}}>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                            <tr>
+                                <td>Gender</td>
+                                <td>data.gender</td>
+                                <td>
+                                    <input type="radio" name="gender">
+                                </td>
+                            </tr>    
+                            <tr>
+                                <td>Experience(in years)</td>
+                                <td>{{data.experience}}</td>
+                                <td>
+                                    <input type="number" name="exper" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Phone Number</td>
+                                <td>{{data.phone}}</td>
+                                <td>
+                                    <input type="number" name="phone" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Age(in years)</td>
+                                <td>{{data.age}}</td>
+                                <td>
+                                    <input type="number" name="age" id="">
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>  
+                    <div class="submit" >
+                        <input style="font-size: 2vw;" type="submit" value="Submit">
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <h5>
+                    All rights reserved
+                </h5>
+            </footer>
+    </div>
+
+
+</body>
+
+</html>

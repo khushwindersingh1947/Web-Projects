@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/welcome.css">
+    <title>Welcome</title>
+   
+</head>
+<style>
+    .p1{
+        font-size: 3vw;
+    }
+    .p2{
+        font-size: 1.5vw;
+    }
+
+.image {
+    background-image: url("pics/bc.jpg");
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.teachimage {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(pics/teacher\ \(2\).jpg);
+    height: 100%;
+    /* max-width: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    border-radius: 4vw;
+    -webkit-filter: blur(2px);
+}
+
+.studimage {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(pics/teacher\ \(2\).jpg);
+    background-image: url(pics/student.jpg);
+    height: 100%;
+    /* max-width: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    border-radius: 4vw;
+    -webkit-filter: blur(2px);
+}
+
+</style>
+<body>
+        <div class="image">
+        <header>
+
+            <div class="head">
+                <div class="left">
+                    <div class="logo">
+
+                        <img src="pics/logo.jpg" alt="education">
+                    </div>
+
+                </div>
+                <h2 class="heading">
+                    WELCOME!
+                </h2>
+
+
+                <div class="sign">
+                    <span> Want to Register? </span>
+
+                        <button onclick="" class="sbtn">Register</button>
+                    
+                </div>
+
+
+            </div>
+
+
+        </header>
+        <main>
+
+            <h4 class="second-heading">
+                Lets Make your Education Better
+            </h4>
+            <div class="contain">
+                <div class="teacher">
+                    <div class="teachimage"></div>
+                    <div class="leftp">
+                        <p class="p1">
+                            TEACHER LOGIN
+
+                        </p>
+                        <p class="p2">
+                            Please Log In Here . . .
+                        </p>
+                        <div class="slink">
+                            <button onclick="window.location.href='teacherform.html'" class="tbtn">Log In As Teacher</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="student">
+
+                    <div class="studimage"></div>
+
+                    <div class="rightp">
+                        <p class="p1">
+                            STUDENT LOGIN
+
+                        </p>
+                        <p class="p2">
+                            Please Log In Here . . .
+                        </p>
+                        <div class="slink">
+                            <button onclick="window.location.href='studentform.html'" class="tbtn">Log In As Student</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

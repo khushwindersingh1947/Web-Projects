@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Teachers</title>
+
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    button:hover{
+
+    }
+    .contain{
+        display: flex;
+    flex-wrap: wrap;
+    height: 613px;
+    flex-direction: column;
+    }
+    tr td{
+        border: 2px solid cornsilk;
+    font-size: 1.5vw;
+    color: #673900;
+    font-family: monospace;
+    }
+    table{
+        height: 100%;
+        width: 100%;
+    }
+    main::before {
+        content: "";
+        background: url('../static/tform.jpg') no-repeat center center/cover;
+        position: absolute;
+        height: 157%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.8;
+    }
+    thead td{
+        font-size: 2vw;
+    color: darkred;
+    font-family: cursive;
+    }
+    tbody td{
+
+    }
+    header::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 21%;
+        opacity: 0.8;
+    }
+
+    header {
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+    }
+    form{
+        text-align: center;
+ 
+    }
+    header img {
+        vertical-align: middle;
+        border-style: none;
+        width: 87px;
+        margin: 24px 76px;
+    }
+
+    .heading {
+        text-align: center;
+        width: 65vw;
+        color: cornsilk;
+    }
+
+    header button {
+        background: cornsilk;
+        border-radius: 12px;
+        width: 80px;
+        color: #3b5639;
+        height: 42px;
+    }
+
+    .form-heading {
+        color: aliceblue;
+        margin-top: 38px;
+        text-align: center;
+    }
+    .box{
+        height: 286px;
+    margin: 10px;
+    width: 652px;
+    }
+    table input{
+    text-align: center;
+    border-radius: 2vw;
+    font-family: cursive;
+    margin: 2px;
+        }
+        .submit input {
+            margin: 2% auto;
+    color: blanchedalmond;
+    background-color: black;
+    padding: 1% 2%;
+    display: block;
+    width: 14vw;
+    font-size:2vw;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Lobster', cursive;
+        }
+        .box1{
+            height: 100%;
+            margin: 10px;
+    width: 652px;
+        }
+        .box2{
+            margin: 10px;
+    width: 652px;
+    height: 331px;
+        }
+        .box3{
+            height: 241px;
+            margin: 10px;
+    width: 652px;
+        }
+  
+</style>
+
+<body>
+    <header>
+        <img class="logo" src="../static/logo.jpg" alt="education">
+        <h2 class="heading" style="font-size:4vw">
+            Teacher's Profile!
+        </h2>
+        <button>Home</button>
+    </header>
+    <main class="main">
+        <p class="form-heading" style="font-size:2vw">
+            You Can change your profile Here
+        </p>
+            <form action="/tprofile" method='post'>
+                <div class="contain">
+
+               
+                <div class="box1" >
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Data Name</td>
+                                <td>Value</td>
+                                <td>Change</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>name</td>
+                                <td>khush</td>
+                                <td>
+                                    <input type="text" name="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>khush</td>
+                                <td>
+                                    <input type="text" name="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>khush</td>
+                                <td>
+                                    <input type="text" name="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>khush</td>
+                                <td>
+                                    <input type="text" name="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>khush</td>
+                                <td>
+                                    <input type="text" name="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>khush</td>
+                                <td>
+                                    <input type="text" name="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>khush</td>
+                                <td>
+                                    <input type="text" name="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>khush</td>
+                                <td>
+                                    <input type="text" name="name">
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="box2">
+
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Data Name</td>
+                                <td>Value</td>
+                                <td>Change</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gender</td>
+                                <td></td>
+                                <td>
+                                    <label class="container">Male
+                                        <input type="radio" name="radio" value="Male">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">Female
+                                        <input type="radio" name="radio" value="Female">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">Other
+                                        <input type="radio" name="radio" value="Other">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Experience(in years)</td>
+                                <td></td>
+                                <td>
+                                    <input type="number" name="exper" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Phone Number</td>
+                                <td>9878387002</td>
+                                <td>
+                                    <input type="number" name="phone" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Age(in years)</td>
+                                <td></td>
+                                <td>
+                                    <input type="number" name="age" id="">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="box3">
+
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Data Name</td>
+                                
+                                <td>Change</td>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>name</td>
+                               
+                                <td>
+                                    <input type="text" name="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                           
+                                <td>
+                                    <input type="text" name="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                           
+                                <td>
+                                    <input type="text" name="name">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+                <div class="submit">
+                    <input style="font-size: 2vw;" type="button" onclick="submit" value="Submit">
+                </div>
+            </form>
+
+  
+
+    </main>
+    <footer>
+        <h5>
+            All rights reserved
+        </h5>
+    </footer>
+    
+</body>
+
+</html>

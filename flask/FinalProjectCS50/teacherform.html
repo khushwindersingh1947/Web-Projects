@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tform.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Teachers</title>
+    <style>
+    
+        .heading {
+            text-align: center;
+            width: 55%;
+            margin: 4px auto;
+            color: #0c623e;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .sign {
+            position: absolute;
+            right: 20px;
+            font-size: 19px;
+            color: #ee5f28;
+            top: 35px;
+        }
+        .logo {
+            width: 86%;
+        }
+        .container {
+            display: inline-block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Hide the browser's default radio button */
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .sign {
+            position: absolute;
+            right: 20px;
+            font-size: 19px;
+            color: #ee5f28;
+            top: 35px;
+        }
+        
+        
+        
+        .sign a {
+            border: 2px solid #87be9b;
+            background-color: #0c623e;
+            border-radius: 23px;
+            text-decoration: none;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            margin: 22px 12px;
+            padding: 9px 7px;
+            box-shadow: 1px 3px #b6a5a5;
+        }
+        .sign a:hover {
+            background-color: #85c4a4;
+        }
+        
+        .sign a:active {
+            background-color: #3e8f6d;
+            box-shadow: 0px 2px rgb(61, 56, 55);
+            transform: translateY(2px);
+        }
+
+        /* Create a custom radio button */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            border-radius: 50%;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .container:hover input~.checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the radio button is checked, add a blue background */
+        .container input:checked~.checkmark {
+            background-color: #2196F3;
+        }
+
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the indicator (dot/circle) when checked */
+        .container input:checked~.checkmark:after {
+            display: block;
+        }
+
+        /* Style the indicator (dot/circle) */
+        .container .checkmark:after {
+            top: 9px;
+            left: 9px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white;
+        }
+
+        .image {
+
+            background-image: url("pics/tform.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .form-heading{
+        margin: 3% auto;
+        font-size: 107%;
+        text-align: center;
+        color: #e6e6e6;
+        font-family: 'Baloo Bhai 2', cursive;
+        }
+        .left {
+
+            position: absolute;
+            left: 90px;
+            top: 9px;
+        
+        }
+        .one {
+            border: 2px solid wheat;
+            margin: 3% auto;
+            width: 48%;
+        }
+
+      
+
+        .aca {
+            border: 2px solid wheat;
+            width: 56%;
+            margin: 2% auto;
+        }
+
+        .per {
+            border: 2px solid wheat;
+            width: 56%;
+            margin: 2% auto;
+        }
+
+        .gender {
+            margin-left: 8%;
+            /* bottom: 136px; */
+            width: 56%;
+            display: inline-block;
+        }
+
+        .gender label {
+            color: blanchedalmond;
+        }
+
+        .submit input {
+            margin: 2% auto;
+            color: blanchedalmond;
+            background-color: black;
+            padding: 1% 2%;
+            display: block;
+            width: 19%;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Lobster', cursive;
+        }
+        .head{
+
+            padding: 11px 15px;
+            margin: -8px auto;
+        }
+        input{
+            font-size:4vw
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="image">
+        <header>
+
+            <div class="head" style="    background-color: #d9d6cd;">
+                <div class="left">
+                    <div class="logo">
+                        <img class="logo" src="logo.jpg" alt="education">
+                    </div>
+
+                </div>
+                <h2 class="heading" style="font-size:4vw">
+                    Teacher's Form!
+                </h2>
+
+             
+                <div class="sign">
+                    Already a user?<a href="">Sign In</a>
+                </div>
+            </div>
+            <main class="main">
+                <p class="form-heading" style="font-size:2vw">
+                    Please fill the entire form to become a TUTOR
+                </p>
+                <form id="msform">
+
+                    <div class="one">
+                        <h2 class="fs-title"style="font-size:2vw">Create your account</h2>
+                        <h3 class="fs-subtitle"style="font-size:1vw">This is step 1</h3>
+                        <input class="l" type="text" name="username" placeholder="username" />
+                        <input class="r" type="password" name="pass" placeholder="Password" />
+                        <input class="l" type="text" name="phone" placeholder="phone number" />
+                        <input class="r" type="password" name="cpass" placeholder="Confirm Password" />
+
+
+                    </div>
+
+
+
+                         <div class="aca">
+                            
+                            
+                                                            <h2 class="fs-title"style="font-size:2vw">Academics</h2>
+                                                            <h3 class="fs-subtitle"style="font-size:1vw">Your Teaching Profile</h3>
+            
+                                <input type="text" name="subjects" placeholder="Subjects you want to teach" />
+                                <input type="text" name="quali" placeholder="Qualifications" />
+                                <input type="text" name="experience" placeholder="Experience" />
+                
+                        </div>
+                        <div class="per"> 
+
+                            <h2 class="fs-title"style="font-size:2vw">Personal Details</h2>
+                            <h3 class="fs-subtitle"style="font-size:1vw">We will never sell it</h3>
+                            <input type="text" name="fname" placeholder="First Name" />
+                            <input type="text" name="lname" placeholder="Last Name" />
+                            <input type="text" name="fathername" placeholder="Father's Name" />
+                            <div class="gender">
+
+                                <h3 style="color: blanchedalmond;">Gender</h3>
+                                <label class="container">Male
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Female
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Other
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <input type="text" name="age" placeholder="Type your age">
+                            <div class="adress">
+                                <h2 class="fs-title">Address</h2>
+                                <input type="text" name="village" placeholder="village/street no">
+                                <input type="text" name="city" placeholder="City">
+                                <input type="text" name="state" placeholder="State">
+                            </div>
+            
+
+
+                    </div> 
+
+                    <div class="submit" >
+                        <input style="font-size: 2vw;" type="submit" value="Submit">
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <h5>
+                    All rights reserved
+                </h5>
+            </footer>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+    body 
+    {
+        margin: 0px;
+        padding: 0px;
+        background: url('pics/abs.jpeg');
+        background-repeat: no-repeat;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .left 
+    {
+        position: absolute;
+        left: 118px;
+        top: 0px;
+        margin-top: 20px;
+        color: white;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .left img
+    {
+        width: 39%;
+        display: block;
+        margin: auto;
+        text-size-adjust: 22px;
+
+    }
+
+    .left div
+    {
+        font-size: 11px;
+        line-height: 0px;
+    }
+
+    .center 
+    {
+        width: 53%;
+        color: white;
+        margin: 20px auto;
+        /* border: 3px solid blanchedalmond; */
+        font-family: 'Fredoka One', cursive;
+        font-size: 23px;
+
+    }
+
+    .right 
+    {
+        position: absolute;
+        right: 40px;
+        top: -6px;
+        display: inline-block;
+        color: white;
+        margin-top: 20px;
+        /* border: 3px solid blanchedalmond; */
+
+    }
+
+    .navbar 
+    {
+        display: inline-block;
+    }
+
+    .navbar li
+    {
+        
+        display: inline-block;
+
+    }
+
+    .navbar li a 
+    {
+        color: antiquewhite;
+        text-decoration: none;
+        padding: 5px 30px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active 
+    {
+        color: rgb(230, 160, 70);
+        text-decoration: underline;
+    }
+
+    .btn 
+    {
+        margin: 13px 5px;
+        color: blanchedalmond;
+        background-color: black;
+        padding: 8px 11px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Lobster', cursive;
+    }
+
+    .btn:hover 
+    {
+        background-color: rgb(57, 58, 51);
+    }
+
+    .contain 
+    {
+        border: 2px solid aliceblue;
+        color: white;
+        width: 40%;
+        margin: 120px 189px;
+        padding: 47px 47px;
+
+    }
+
+    .form input 
+    {
+        text-align: center;
+        font-family: 'Fredoka One', cursive;
+        display: block;
+        width: 284px;
+        padding: 4px 10px;
+        margin: 6px auto;
+        font-size: 19px;
+    }
+
+    .contain h1 
+    {
+        text-align: center;
+    }
+
+    .form button 
+    {
+        display: block;
+        width: 18%;
+        margin: auto;
+    }

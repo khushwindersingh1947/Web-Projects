@@ -1,0 +1,90 @@
+{% extends "layout.html"%}
+{% block main%}
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Students</title>
+    <style>
+        .image {
+
+            background-image: url("/static/tform.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+    </style>
+
+    <div class="image">
+        <header>
+
+            <div class="head" style="    background-color: #d9d6cd;">
+
+                    <div class="logo">
+                        <img class="logo" src="/static/logo.jpg" alt="education">
+                    </div>
+
+
+                <h2 class="heading" style="font-size:4vw">
+                    Students's Form!
+                </h2>
+.
+
+                <div class="sign">
+                    Already a user?<a href="">Sign In</a>
+                </div>
+            </div>
+            <main class="main">
+            {% if error %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              {{error}}
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+            {% endif %}
+                <p class="form-heading" style="font-size:2vw">
+                    Please fill the entire form to Register
+                </p>
+                <form id="msform" action='/sregister' method='post'>
+
+                    <div class="one">
+                        <h2 class="fs-title"style="font-size:2vw">Create your account</h2>
+                        <h3 class="fs-subtitle"style="font-size:1vw">This is step 1</h3>
+                        <input class = "l" type = "text" name = "username" autocomplete="off" autofocus="on" placeholder = "username" value="{{username}}"/>
+                        <input class = "l" type = "number" name = "phone" autocomplete="off" autofocus="on" placeholder = "phone number" value="{{ phone}}" />
+                        <input class = "r" type = "password" name = "pass" autocomplete="off" autofocus="on" placeholder = "Password" value="{{password}}"/>
+                        <input class = "r" type = "password" name = "cpass" placeholder = "Confirm Password" autocomplete="off" autofocus="on" value="{{confirm_password}}"/>
+                    </div>
+
+                        <div class="per">
+
+                            <h2 class="fs-title"style="font-size:2vw">Personal Details</h2>
+                            <h3 class="fs-subtitle"style="font-size:1vw">We will never sell it</h3>
+                             <input type="text" name="fname" placeholder="First Name"autocomplete="off" autofocus="on" value="{{first}}"/>
+                            <input type="text" name="lname" placeholder="Last Name" autocomplete="off" autofocus="on"value="{{last}}"/>
+                            <input type="text" name="fathername" placeholder="Father's Name" autocomplete="off" autofocus="on" value="{{father}}"/>
+
+                            <input type="number" name="age" placeholder="Type your age" autocomplete="off" autofocus="on" value="{{age}}"/>
+                            <div class="adress">
+                                <h2 class="fs-ad">Address</h2>
+                                 <input type="text" name="village" placeholder="village/street no" autocomplete="off" autofocus="on" value="{{village}}" />
+                                <input type="text" name="city" placeholder="City" value="{{city}}"/>
+                                <input type="text" name="state" placeholder="State" value="{{state}}"/>
+                            </div>
+                    </div>
+
+                    <div class="submit" >
+                        <input style="font-size: 2vw;" type="submit" value="Submit">
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <h5>
+                    All rights reserved
+                </h5>
+            </footer>
+    </div>
+
+{% endblock %}

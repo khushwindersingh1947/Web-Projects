@@ -1,0 +1,42 @@
+.center
+{
+    text-align:center;
+}
+.border
+{
+    clear: both;
+    width: 400px;
+    border: 2px solid black;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.almback
+{
+    background-color: blanchedalmond;
+}
+.textsize
+{
+    font-size: larger;
+}
+.right
+{
+    float: right;
+
+}
+.heading
+{
+    background-color: #a1f18c;
+    padding: 32px 2px;
+}
+.healthtext{
+    background-color: blanchedalmond;
+}
+.bordertext
+{
+    border: 2px solid rgb(235, 210, 164);
+    border-radius: 5px;
+    margin-left: 415px;
+    margin-top: -355px;
+    background-color:rgb(255 226 206 / 56%);
+} 

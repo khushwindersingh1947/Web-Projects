@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+.teacher {
+    border: 2px solid red;
+}
+
+.student {
+    border: 2px solid green;
+    position: absolute;
+    left: 34vw;
+
+    border-radius: 4vw;
+    width: 32vw;
+    height: 20vw;
+    color: #82ca22;
+    font-size: 2vw;
+    top: 21vw;
+}
+
+/* .image {
+    background-image: url("pics/bc.jpg");
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} */
+
+.ak {
+    margin: 120px 156px;
+    font-size: 38px;
+
+    color: #ee5f28;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.registration {
+    position: absolute;
+    bottom: 46px;
+    left: 108px;
+}
+
+.head {
+    display: flex;
+}
+
+.logo img {
+    max-width: 7vw;
+    position: absolute;
+    top: 2vw;
+    left: 6vw;
+}
+
+.heading {
+    margin: 3vw auto;
+    font-size: 4vw;
+    color: #8d2b15;
+}
+
+.second-heading {
+    margin-left: 19vw;
+    font-size: 2vw;
+    margin-top: 4vw;
+    color: #a17f51;
+}
+
+.sign {
+    position: absolute;
+    right: 6vw;
+    /* width: 10vw; */
+    top: 4vw;
+}
+
+.sbtn {
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    padding: 1vw 2vw;
+    color: #fff;
+    background-color: #8d2b15;
+    border: none;
+    border-radius: 15px;
+    box-shadow:3px 6px #ccc4a8;
+    cursor:pointer;
+}
+.sbtn:hover{
+    background-color: rgb(201, 91, 91);
+}
+
+.sbtn:active {
+    background-color: #8d2b15;
+    box-shadow: 5px 5px #666;
+    transform: translateY(6px);
+}
+
+.sign span {
+    font-size: 1.5vw;
+    color: antiquewhite;
+}
+
+.slink {
+/* border: 2px solid green; */
+
+position: relative;
+/* margin: 2vw 0vw; */
+
+top: 0vw;
+left: 1vw;
+}
+
+.tbtn {
+    text-align: center;
+width: 18vw;
+cursor:pointer;
+    color: antiquewhite;
+    font-size: 1.1vw;
+    background-color: #8d2b15;
+padding: 1vw;
+border-radius: 2vw;
+box-shadow: 0.4vw 0.4vw #ccc4a8;
+}
+.tbtn:active {
+    background-color: #8d2b15;
+    box-shadow: 5px 5px #666;
+    transform: translateY(6px);
+}
+.tbtn:hover{
+    background-color: rgb(201, 91, 91);
+}
+
+.teacher {
+
+    border: 2px solid green;
+    position: absolute;
+    left: 2vw;
+    border-radius: 4vw;
+    width: 31vw;
+    height: 20vw;
+    color: #82ca22;
+    font-size: 2vw;
+    top: 21vw;
+}
+
+.teachimage {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(pics/teacher\ \(2\).jpg);
+    height: 100%;
+    /* max-width: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    border-radius: 4vw;
+    -webkit-filter: blur(2px);
+}
+
+.studimage {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(pics/teacher\ \(2\).jpg);
+    background-image: url(pics/student.jpg);
+    height: 100%;
+    /* max-width: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    border-radius: 4vw;
+    -webkit-filter: blur(2px);
+}
+
+.leftp {
+    position: absolute;
+    top: 1vw;
+    left: 3vw;
+    color: antiquewhite;
+}
+
+.rightp {
+    position: absolute;
+    top: 1vw;
+    left: 2vw;
+    color: antiquewhite;
+}
+.tbtn:focus { outline: none; }

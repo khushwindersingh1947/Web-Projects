@@ -1,0 +1,22 @@
+.navbar{
+    background-color:rgb(204 221 69); 
+    border-radius: 10px; 
+}
+.navbar ul{
+    overflow: auto;
+    padding: 2px 2px;
+}
+.navbar li{
+    float: right;
+    list-style: none;
+    padding: 9px 17px;
+
+}
+.navbar li a{
+    color: rgb(29, 26, 23);
+    text-decoration: none;
+    font-size: 20px;
+}
+.navbar li:hover{
+    color: cornflowerblue;
+}

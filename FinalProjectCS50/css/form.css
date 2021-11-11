@@ -1,0 +1,105 @@
+.fs-ad{
+    font-size: 1.8vw;
+text-align: center;
+color: #ffffff;
+}
+
+.fs-title{
+    font-size: 3vw;
+text-align: center;
+color: antiquewhite;
+}
+.fs-subtitle{
+    font-size: 1.5vw;
+text-align: center;
+color: #d9d6cd;
+}
+
+.heading {
+    text-align: center;
+width: 55%;
+margin: 4px auto;
+color: #0c623e;
+font-family: 'Baloo Bhai 2', cursive;
+}
+input:focus{
+    outline:none;
+}
+.logo {
+    width: 5vw;
+position: absolute;
+top: 1.5vw;
+left: 5vw;
+}
+.sign {
+    position: absolute;
+right: 4vw;
+font-size: 2vw;
+color: #ee5f28;
+top: 3vw;
+}
+.sign a {
+          
+    background-color: #0c623e;
+    border-radius: 2vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: white;
+    text-align: center;
+    margin: 2vw 1vw;
+    padding: 9px 7px;
+    box-shadow: 1px 3px #b6a5a5;
+        }
+        .sign a:hover {
+            background-color: #85c4a4;
+        }
+        
+        .sign a:active {
+            background-color: #3e8f6d;
+            box-shadow: 0px 2px rgb(61, 56, 55);
+            transform: translateY(2px);
+        }
+        .form-heading{
+            margin: 3% auto;
+    font-size: 2vw;
+    text-align: center;
+    color: #e6e6e6;
+    font-family: 'Baloo Bhai 2', cursive;
+        }
+        .one {
+            margin: 3vw auto;
+    width: 57vw;
+        }
+
+
+        .per {
+            width: 58vw;
+    margin: 1vw auto;
+        }
+        input{
+            font-size: 2vw;
+    margin: 1vw auto;
+    display: block;
+    width: 49%;
+    text-align: center;
+    border-radius: 2vw;
+    font-family: cursive;
+        }
+        .head{
+
+            padding: 2vw 2vw;
+    margin: -1vw auto;
+        }
+        .submit input {
+            margin: 2% auto;
+    color: blanchedalmond;
+    background-color: black;
+    padding: 1% 2%;
+    display: block;
+    width: 14vw;
+    font-size:2vw;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Lobster', cursive;
+        }
+ 
