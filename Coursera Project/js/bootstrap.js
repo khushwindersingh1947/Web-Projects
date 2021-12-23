@@ -180,7 +180,7 @@ if (typeof jQuery === 'undefined') {
  * ======================================================================== */
 
 
-+function ($) {
+ +function ($) {
   'use strict';
 
   // BUTTON PUBLIC CLASS DEFINITION
